@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package authenticate;
+
+
+message userFromGoogle {
+  string googleId = 1;
+  string displayName = 2;
+  string firstName = 3;
+  string lastName = 4;
+  string image = 5;
+  string provider = 6;
+}

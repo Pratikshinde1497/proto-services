@@ -1,0 +1,9 @@
+syntax =  "proto3";
+
+package authenticate;
+
+import "services/authenticate/messages.proto";
+
+service AuthenticateAPI {
+  rpc authenticateUserWithGoogle ( userFromGoogle ) returns ( userFromGoogle );
+}
