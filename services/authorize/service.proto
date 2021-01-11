@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package authorize;
 
-import "services/authorize/messages.proto";
+import "messages.proto";
 
 service Authorize {
   rpc authorizeUser ( request ) returns ( response );
