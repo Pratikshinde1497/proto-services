@@ -1,7 +1,23 @@
 syntax = "proto3";
 
-package authenticate;
+package authenticationPackage;
 
+
+message token {
+  string tokenId = 1;
+}
+
+message userFromDB {
+  string googleId = 1;
+  string displayName = 2;
+  string firstName = 3;
+  string lastName = 4;
+  string image = 5;
+  string provider = 6;
+  string role = 7;
+  string createdAt = 8;
+  string updatedAt = 9;
+}
 
 message userFromGoogle {
   string googleId = 1;

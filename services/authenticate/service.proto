@@ -1,9 +1,10 @@
 syntax =  "proto3";
 
-package authenticate;
+package authenticationPackage;
 
 import "messages.proto";
 
 service AuthenticateAPI {
+  rpc authenticateUser ( token ) returns ( userFromDB );
   rpc authenticateUserWithGoogle ( userFromGoogle ) returns ( userFromGoogle );
 }
