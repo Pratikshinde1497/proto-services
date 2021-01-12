@@ -6,5 +6,5 @@ import "messages.proto";
 
 service AuthenticateAPI {
   rpc authenticateUser ( token ) returns ( userFromDB );
-  rpc authenticateUserWithGoogle ( userFromGoogle ) returns ( userFromGoogle );
+  rpc authenticateUserWithGoogle ( userFromGoogle ) returns ( token );
 }
